@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Fábio Lins | Desenvolvedor Front-End">
+    <title>Fábio Lins | Front-End</title>
+
+    <link rel="icon" type="imagem/png" href="./img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/starsStyle.css">    
+    <link rel="stylesheet" href="./css/carouselStyle.css"> 
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a id="wpp" href="https://api.whatsapp.com/send?phone=5521998761128" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
+            <nav id="menu">
+                <img src="img/logo.png" alt="logo">
+                <div id="menu-itens">
+                    <a href="#sobre">SOBRE</a></li>
+                    <a href="#portfolio">PORTFÓLIO</a>
+                    <a href="#tecnologias">TECNOLOGIAS</a>
+                    <a href="#contato">CONTATO</a>
+                </div>
+            </nav>
+            <div id="perfil">
+                <canvas id="stars"></canvas>
+            </div>
+        </header>
+
+        <!-- Section SOBRE-->
+        <section id="sobre">
+            <div id="descricao" data-anime="left" class="">
+                <h2>Seja bem vindo! Me chamo <span>Fábio Lins.</span></h2>
+                   <p>Sempre gostei de trabalhar em grupo, 
+                    descobrir novas maneiras e possibilidades de resolver desafios de forma conjunta com os colegas de equipe.
+                    É gratificante compartilhar erros e acertos e isso é o ponto principal para continuar aprendendo.
+                    
+                     Atualmente trabalho como desenvolvedor front-end júnior utilizando React.Js como principal ferramenta e 
+                    estou no segundo semestre de análise e desenvolvimento de sistemas.</p>
+               
+                <div id="redes-sociais">
+                    <a href="https://www.linkedin.com/in/fabiolins1995/" target="_blank"><i
+                            class="fab fa-linkedin-in azul"></i></i></a>
+                    <a href="https://github.com/fabiolins1995" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+                <img data-anime="right" id="fotoFabio" src="./img/fabio.jpeg" alt="">
+        </section>
+
+        
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="carousel-item">
+                        <img src="./img/1.jpg">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="./img/2.jpg">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="./img/3.jpg">
+                    </div>
+                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label>
+                    <ol class="carousel-indicators">
+                        <li>
+                            <label for="carousel-1" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-2" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-3" class="carousel-bullet">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        
+        <!-- Section sobre as tecnologias que uso-->
+        <section id="tecnologias">
+            <h1>Tecnologias</h1>
+            <div class="tecs" data-anime>
+                <div>
+                    <i class="fab fa-html5 vermelho"></i>
+                    <p>HTML5</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-react azul"></i>
+                    <p>React.JS</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-css3-alt azul"></i>
+                    <p>CSS3</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-js-square amarelo"></i>
+                    <p>JavaScript</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+            </div>
+            <div class="tecs" data-anime>
+                <div>
+                    <i class="fab fa-linux branco"></i>
+                    <p>Linux</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-laptop cinza"></i>
+                    <p>Design Responsivo</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-git coral"></i>
+                    <p>Git</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+                <div>
+                    <i class="fab fa-bootstrap roxo"></i>
+                    <p>BootStrap</p>
+                    <div class="contagem">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contato-->
+        <section id="contato">
+            <h1>Contato</h1>
+            <form action="mailto:marcooli.pereira@gmail.com" method="post" enctype="text/plain" id="enviar">
+                <div id="form">
+                    <div>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                </div>
+                <div>
+                    <span id="erro"></span>
+                </div>
+                <div>
+                    <button type="submit" value="Enviar" id="btn">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <h2>Fábio Lins</h2>
+                <p>Todos os direitos reservados © 2021.</p>
+                <div id="redes-sociais2">
+                    <a href="https://www.linkedin.com/in/fabiolins1995/" target="_blank"><i
+                            class="fab fa-linkedin-in azul"></i></i></a>
+                    <a href="https://github.com/fabiolins1995" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/main.js"></script>
+        <script src="./js/starsScript.js"></script>
+        <script src="https://kit.fontawesome.com/bb5a28c4c3.js" crossorigin="anonymous"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-157870898-1');
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  color: #bebebe;
+  text-align: center;
+}
+
+header {
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  width: 100%;
+  min-height: 100vh;
+  vertical-align: middle;
+}
+
+/* ids e classes */
+#wpp {
+  color: #06d755;
+  font-size: 60px;
+  position: fixed;
+  left: 35px;
+  bottom: 30px;
+}
+
+/* ----------------------- Menu ------------------------*/
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+#menu a {
+  text-decoration: none;
+  color: #bebebe;
+  padding-left: 50px;
+  transition: all 0.5s;
+}
+
+#menu a:hover {
+  color: #f0ffff;
+}
+
+/* -----------------------Sobre------------------------*/
+
+#fotoFabio {
+  border-radius: 50%;
+  width: 400px;
+  box-shadow: 8px 7px 5px -3px rgba(20, 20, 20, 0.6);
+}
+
+#sobre {
+  background-color: #fff;
+  min-height: 500px;
+  width: 100%;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-top: 50px;
+  align-items: flex-start;
+}
+
+#sobre h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+#sobre h2 span {
+  color: black;
+}
+
+#sobre p {
+  width: 425px;
+  text-align: start;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+#sobre p span {
+  color: #000;
+  font-weight: 700;
+}
+
+/* -----------------------Redes-sociais------------------------*/
+#redes-sociais {
+  margin: 50px auto;
+  text-align: start;
+}
+
+#redes-sociais a {
+  font-size: 16px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  color: #232323;
+  border: 1px solid #888;
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+#redes-sociais a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* -----------------------Dados------------------------*/
+#dados {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  font-size: 16px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  margin-left: -170px;
+}
+
+/* -----------------------Portfólio------------------------*/
+#portfolio {
+  background-color: #000;
+  width: 100%;
+  min-height: 700px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#portfolio h1 {
+  color: white;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+/* -----------------------Tecnologias------------------------*/
+#tecnologias {
+  background-color: #000;
+  width: 100%;
+  min-height: 700px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#tecnologias h1 {
+  color: white;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+#tecnologias h1::after {
+  background-color: currentColor;
+  width: 40px;
+  height: 1px;
+  display: block;
+  margin: 3px 44%;
+}
+
+.tecs {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.tecs i {
+  font-size: 90px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.tecs p {
+  color: white;
+  font-weight: bold;
+}
+
+.contagem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  margin: 10px auto;
+}
+
+.caixa-prog {
+  width: 350px;
+  height: 6px;
+  border-radius: 13px;
+  background-color: #bbb;
+  margin: 1px auto;
+  padding: 2px;
+}
+
+.html {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #634b4b;
+  animation: progresso 3s;
+}
+
+.reactjs {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #634b4b;
+  animation: progresso 3s;
+}
+
+.css {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #634b4b;
+  animation: progresso 3s;
+}
+
+.javascript {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #634b4b;
+  animation: progresso 3s;
+}
+
+.linux {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #634b4b;
+  animation: progresso 3s;
+}
+
+.responsivo {
+  width: 70px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: git 3s;
+}
+
+.git {
+  width: 70px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: git 3s;
+}
+
+.bootstrap {
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: boots 3s;
+}
+
+.vermelho {
+  color: #cc362a;
+}
+
+.azul {
+  color: #34a3d5;
+}
+
+.preto {
+  color: black;
+}
+
+.amarelo {
+  color: #f8db00;
+}
+
+.branco {
+  color: white;
+}
+
+.cinza {
+  color: #333333;
+}
+
+.coral {
+  color: #e94e32;
+}
+
+.roxo {
+  color: #6b45a8;
+}
+
+/* -----------------------KeyFrames------------------------*/
+
+@keyframes progresso {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 105px;
+  }
+}
+
+@keyframes git {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes resp {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 140px;
+  }
+}
+
+@keyframes boots {
+  from {
+    width: 1px;
+  }
+  to {
+    width: 35px;
+  }
+}
+
+/* -----------------------Contato------------------------*/
+#contato {
+  background-color: white;
+  width: 100%;
+  min-height: 700px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#contato h1 {
+  color: #000;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+#contato h1::after {
+  background-color: currentColor;
+  width: 40px;
+  height: 1px;
+  display: block;
+  margin: 3px 46%;
+}
+
+#sub-contato {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px auto;
+}
+
+#sub-contato i {
+  background-color: #232323;
+  color: #fafafa;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.group div {
+  margin-left: 10px;
+}
+
+.group span {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.group p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#form input {
+  height: 40px;
+  width: 400px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  color: #232323;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#btn {
+  width: 100px;
+  height: 30px;
+  background-color: #383838;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+#btn:hover {
+  background-color: #232323;
+}
+
+textarea {
+  height: 180px;
+  width: 820px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  margin: 10px;
+  color: #232323;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+/* -----------------------Footer------------------------*/
+#redes-sociais2 {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 25px;
+  font-size: 20px;
+}
+
+#redes-sociais2 a {
+  color: white;
+}
+
+footer {
+  color: white;
+  background-color: #000;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------------------Animaçoes------------------------*/
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
