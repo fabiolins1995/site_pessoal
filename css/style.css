@@ -12,6 +12,7 @@ body {
   letter-spacing: 1px;
   color: #bebebe;
   text-align: center;
+  overflow-x: hidden;
 }
 
 header {
@@ -145,17 +146,25 @@ header {
   font-size: 40px;
 }
 
+.portimg {
+  margin-right: 50px;
+}
+
+.portfoliotext {
+  color: white;
+}
+
 /* -----------------------Tecnologias------------------------*/
 #tecnologias {
-  background-color: #000;
+  background-color: white;
   width: 100%;
   min-height: 700px;
   font-size: 16px;
-  color: #333333;
+  color: #000;
 }
 
 #tecnologias h1 {
-  color: white;
+  color: #000;
   padding-top: 20px;
   font-size: 40px;
 }
@@ -182,7 +191,7 @@ header {
 }
 
 .tecs p {
-  color: white;
+  color: #000;
   font-weight: bold;
 }
 

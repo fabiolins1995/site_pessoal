@@ -234,6 +234,10 @@
     overflow: hidden;
   }
 
+  #portfolioImg {
+    height: 400px;
+  }
+
   #fotoFabio {
     border-radius: 50%;
     width: 200px;
@@ -254,7 +258,7 @@
   #sobre h2 {
     font-size: 22px;
     max-width: 80%;
-    margin: 20px auto;
+    margin: 30px;
   }
 
   #sobre p {
