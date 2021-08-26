@@ -176,9 +176,29 @@
 #btn {
   margin-bottom: 15px;
 }
+@media screen and (max-width: 414px) {
+  header {
+    min-height: 100vh;
+  }
 
-textarea {
-  width: 600px;
+  #container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #container .navbar {
+    position: fixed;
+    z-index: 9900;
+    width: 340px;
+    height: 5px;
+    background-color: black;
+  }
+
+  #container .nav-menu.active {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media (min-width: 48em) {
@@ -239,7 +259,30 @@ textarea {
   #perfil {
     margin-top: 75px;
   }
+  @media screen and (max-width: 414px) {
+    header {
+      min-height: 100vh;
+    }
 
+    #container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #container .navbar {
+      position: fixed;
+      z-index: 9900;
+      width: 340px;
+      height: 5px;
+      background-color: black;
+    }
+
+    #container .nav-menu.active {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
   #perfil img {
     width: 215px;
     margin-top: 100px;
