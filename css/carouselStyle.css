@@ -23,7 +23,7 @@ body {
 }
 
 .carousel-item {
-  position: absolute;
+  position: fixed;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
