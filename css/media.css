@@ -88,59 +88,113 @@
     margin-top: 18px;
   }
 
-  #perfil {
-    letter-spacing: 5px;
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-  #perfil img {
-    width: 335px;
+  .nav-menu.active {
+    left: 0;
   }
 
-  #perfil h1 {
-    font-size: 50px;
+  .nav-item {
+    margin: 2.5rem 0;
   }
 
-  #sobre {
+  .hamburger {
     display: block;
+    cursor: pointer;
   }
+}
 
-  #dados {
-    margin: 0 auto;
-    padding-right: 145px;
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#perfil {
+  letter-spacing: 5px;
+}
+
+#perfil img {
+  width: 335px;
+}
+
+#perfil h1 {
+  font-size: 50px;
+}
+
+#sobre {
+  display: block;
+}
+
+#dados {
+  margin: 0 auto;
+  padding-right: 145px;
+}
+
+#descricao {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#tecnologias h1::after {
+  margin-left: 36%;
+}
+
+#sub-contato {
+  display: inline-block;
+}
+
+#contato h1::after {
+  margin-left: 41%;
+}
+
+.group {
+  padding: 15px;
+}
+
+#form input {
+  width: 340px;
+  margin: 15px;
+}
+
+#btn {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 600px;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
   }
-
-  #descricao {
-    display: inline-block;
-    margin: 0 auto;
+  .header li a {
+    padding: 20px 30px;
   }
-
-  #tecnologias h1::after {
-    margin-left: 36%;
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
   }
-
-  #sub-contato {
-    display: inline-block;
-  }
-
-  #contato h1::after {
-    margin-left: 41%;
-  }
-
-  .group {
-    padding: 15px;
-  }
-
-  #form input {
-    width: 340px;
-    margin: 15px;
-  }
-
-  #btn {
-    margin-bottom: 15px;
-  }
-
-  textarea {
-    width: 600px;
+  .header .menu-icon {
+    display: none;
   }
 }
 
