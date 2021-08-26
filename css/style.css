@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  background-color: #000;
   width: 100%;
   min-height: 100vh;
   vertical-align: middle;
@@ -38,7 +38,7 @@ header {
 
 /* ----------------------- Menu ------------------------*/
 .navbar {
-  background-color: transparent;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,6 +80,10 @@ header {
   font-size: 1.6rem;
   font-weight: 400;
   color: white;
+}
+
+/* -----------------------StarsFoto------------------------*/
+#starsImg {
 }
 
 /* -----------------------Sobre------------------------*/
