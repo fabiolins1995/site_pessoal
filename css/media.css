@@ -204,6 +204,25 @@ textarea {
     min-height: 100vh;
   }
 
+  #container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #container .navbar {
+    position: fixed;
+    z-index: 9900;
+    width: 460px;
+    height: 5px;
+    background-color: black;
+  }
+
+  #container .nav-menu.active {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   #wpp {
     bottom: 45px;
     left: 11px;
@@ -278,6 +297,31 @@ textarea {
 
 .bootstrapName {
   padding-left: 40px;
+}
+
+@media screen and (max-width: 414px) {
+  header {
+    min-height: 100vh;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #container .navbar {
+    position: fixed;
+    z-index: 9900;
+    width: 340px;
+    height: 5px;
+    background-color: black;
+  }
+
+  #container .nav-menu.active {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -384,5 +428,30 @@ textarea {
 
   textarea {
     width: 275px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    min-height: 100vh;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #container .navbar {
+    position: fixed;
+    z-index: 9900;
+    width: 240px;
+    height: 5px;
+    background-color: black;
+  }
+
+  #container .nav-menu.active {
+    background: rgba(0, 0, 0, 0.5);
   }
 }
